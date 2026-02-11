@@ -15,40 +15,61 @@
 <body>
 
 <!-- Navbar -->
-<div class="container-fluid bg-light sticky-top">
-    <div class="container">
-        <nav class="navbar navbar-light navbar-expand-xl">
-            <a href="index.html" class="navbar-brand">
-                <h1 class="text-primary display-4">Spa</h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars text-primary"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav mx-auto">
-                    <a href="index.html" class="nav-item nav-link">Ana Sayfa</a>
-                    <a href="about.html" class="nav-item nav-link">Hakkımızda</a>
-                    <a href="service.html" class="nav-item nav-link">Hizmetler</a>
-                    <a href="price.html" class="nav-item nav-link">Fiyatlar</a>
-                    <a href="contact.html" class="nav-item nav-link active">İletişim</a>
+<div class="container-fluid sticky-top px-0">
+    <!-- Topbar with contact info -->
+    <div class="container-fluid topbar d-none d-lg-block">
+        <div class="container px-0">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="me-4 text-light">
+                            <i class="fas fa-map-marker-alt text-primary me-2"></i>Konumumuzu Bulun
+                        </a>
+                        <a href="#" class="me-4 text-light">
+                            <i class="fas fa-phone-alt text-primary me-2"></i>+90 532 123 45 67
+                        </a>
+                        <a href="#" class="text-light">
+                            <i class="fas fa-envelope text-primary me-2"></i>info@ornekspa.com
+                        </a>
+                    </div>
                 </div>
-                <a href="#" class="btn btn-primary rounded-pill px-4">Randevu Al</a>
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn-square border rounded-circle nav-fill"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <div class="container-fluid bg-light">
+        <div class="container px-0">
+            <nav class="navbar navbar-light navbar-expand-xl">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-primary display-4">Spa</h1>
+                </a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto border-top">
+                        <a href="index.html" class="nav-item nav-link">Ana Sayfa</a>
+                        <a href="about.html" class="nav-item nav-link">Hakkımızda</a>
+                        <a href="service.html" class="nav-item nav-link">Hizmetler</a>
+                        <a href="price.html" class="nav-item nav-link">Fiyatlar</a>
+                        <a href="contact.html" class="nav-item nav-link">İletişim</a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="btn btn-primary rounded-pill py-3 px-4 ms-4">Randevu Al</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </div>
 </div>
-
-<!-- Header -->
-<div class="container-fluid bg-breadcrumb py-5">
-    <div class="container text-center py-5">
-        <h3 class="text-white display-3 mb-4">İletişim</h3>
-        <ol class="breadcrumb justify-content-center mb-0">
-            <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
-            <li class="breadcrumb-item active text-white">İletişim</li>
-        </ol>
-    </div>
-</div>
-
 <!-- Contact Section -->
 <div class="container-fluid contact py-5" style="background: var(--bs-primary);">
     <div class="container pt-5">

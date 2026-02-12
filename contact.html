@@ -1,162 +1,344 @@
 <!DOCTYPE html>
 <html lang="tr">
 
-<head>
-    <meta charset="utf-8">
-    <title>Spa - Türk Spa & Güzellik Salonu</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Türk spa iletişim, randevu, hamam" name="keywords">
-    <meta content="Spa Türk Spa & Güzellik Salonu İletişim Sayfası" name="description">
+    <head>
+        <meta charset="utf-8">
+        <title>Ornek Spa - İletişim</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="spa iletişim, randevu, türk hamamı, masaj, istanbul spa" name="keywords">
+        <meta content="Ornek Spa ile iletişime geçin: adres, telefon, e-posta ve online randevu." name="description">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-</head>
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet"> 
 
-<body>
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-<!-- Navbar -->
-<div class="container-fluid sticky-top px-0">
-    <!-- Topbar with contact info -->
-    <div class="container-fluid topbar d-none d-lg-block">
-        <div class="container px-0">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <div class="d-flex flex-wrap">
-                        <a href="#" class="me-4 text-light">
-                            <i class="fas fa-map-marker-alt text-primary me-2"></i>Konumumuzu Bulun
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid sticky-top px-0">
+            <div class="container-fluid topbar d-none d-lg-block">
+                <div class="container px-0">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <div class="d-flex flex-wrap">
+                                <a href="#" class="me-4 text-light"><i class="fas fa-map-marker-alt text-primary me-2"></i>Konum Bul</a>
+                                <a href="#" class="me-4 text-light"><i class="fas fa-phone-alt text-primary me-2"></i>phone number</a>
+                                <a href="#" class="text-light"><i class="fas fa-envelope text-primary me-2"></i>info@ornekspa.com</a>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn-square border rounded-circle nav-fill"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-light">
+                <div class="container px-0">
+                    <nav class="navbar navbar-light navbar-expand-xl">
+                        <a href="index.html" class="navbar-brand">
+                            <h1 class="text-primary display-4">Ornek Spa</h1>
                         </a>
-                        <a href="#" class="me-4 text-light">
-                            <i class="fas fa-phone-alt text-primary me-2"></i>+90 532 123 45 67
-                        </a>
-                        <a href="#" class="text-light">
-                            <i class="fas fa-envelope text-primary me-2"></i>info@ornekspa.com
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="d-flex align-items-center justify-content-end">
-                        <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="btn-square border rounded-circle nav-fill"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Main Navbar -->
-    <div class="container-fluid bg-light">
-        <div class="container px-0">
-            <nav class="navbar navbar-light navbar-expand-xl">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="text-primary display-4">Spa</h1>
-                </a>
-                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars text-primary"></span>
-                </button>
-                <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto border-top">
-                        <a href="index.html" class="nav-item nav-link">Ana Sayfa</a>
-                        <a href="about.html" class="nav-item nav-link">Hakkımızda</a>
-                        <a href="service.html" class="nav-item nav-link">Hizmetler</a>
-                        <a href="price.html" class="nav-item nav-link">Fiyatlar</a>
-                        <a href="contact.html" class="nav-item nav-link">İletişim</a>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <a href="#" class="btn btn-primary rounded-pill py-3 px-4 ms-4">Randevu Al</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-</div>
-<!-- Contact Section -->
-<div class="container-fluid contact py-5" style="background: var(--bs-primary);">
-    <div class="container pt-5">
-        <div class="row g-4 align-items-center">
-
-            <!-- Left Text -->
-            <div class="col-lg-6 text-center">
-                <h1 class="display-4 text-white mb-4">Bizimle İletişime Geçin</h1>
-                <p class="text-white fs-5">
-                    Randevu almak veya hizmetlerimiz hakkında bilgi almak için bizimle iletişime geçebilirsiniz.
-                    Ekibimiz en kısa sürede size dönüş yapacaktır.
-                </p>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="col-lg-6">
-                <div class="contact-form rounded p-5 bg-white">
-                    <form>
-                        <h4 class="mb-4">Sorunuz mu var?</h4>
-
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Adınız">
+                        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars text-primary"></span>
+                        </button>
+                        <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                            <div class="navbar-nav mx-auto border-top">
+                                <a href="index.html" class="nav-item nav-link">Anasayfa</a>
+                                <a href="about.html" class="nav-item nav-link">Hakkımızda</a>
+                                <a href="service.html" class="nav-item nav-link">Hizmetler</a>
+                                <a href="price.html" class="nav-item nav-link">Fiyatlar</a>
+                                <!-- <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sayfalar</a>
+                                    <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                        <a href="team.html" class="dropdown-item">Ekibimiz</a>
+                                        <a href="testimonial.html" class="dropdown-item">Yorumlar</a>
+                                        <a href="gallery.html" class="dropdown-item">Galeri</a>
+                                        <a href="appointment.html" class="dropdown-item">Randevu</a>
+                                        <a href="404.html" class="dropdown-item">404 Sayfası</a>
+                                    </div>
+                                </div> -->
+                                <a href="contact.html" class="nav-item nav-link active">İletişim</a>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                                <!-- <button class="btn-search btn btn-primary btn-primary-outline-0 rounded-circle btn-lg-square" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> -->
+                                <a href="appointment.html" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-4 ms-4">Randevu Al</a>
+                            </div>
                         </div>
-
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="E-posta">
-                        </div>
-
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Telefon">
-                        </div>
-
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Konu">
-                        </div>
-
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="4" placeholder="Mesajınız"></textarea>
-                        </div>
-
-                        <button class="btn btn-primary w-100 py-3" type="submit">Gönder</button>
-                    </form>
+                    </nav>
                 </div>
             </div>
-
         </div>
-    </div>
-</div>
+        <!-- Navbar End -->
 
-<!-- Contact Info -->
-<div class="container py-5">
-    <div class="row g-4 text-center">
 
-        <div class="col-lg-4">
-            <div class="p-4 border rounded">
-                <h4>Adres</h4>
-                <p>İstiklal Caddesi No:25, İstanbul</p>
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Anahtar kelime ile ara</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="anahtar kelime" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb py-5">
+            <div class="container text-center py-5">
+                <h3 class="text-white display-3 mb-4">İletişim</h3>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Anasayfa</a></li>
+                    <li class="breadcrumb-item"><a href="#">Sayfalar</a></li>
+                    <li class="breadcrumb-item active text-white">İletişim</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+        
+        <!-- Contact Start -->
+        <div class="container-fluid contact py-5" style="background: var(--bs-primary);">
+            <div class="container pt-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="text-center">
+                            <h1 class="display-3 text-white mb-4">Bize Ulaşın</h1>
+                            <p class="text-white fs-4">
+                                Randevu, hizmetler veya paketler hakkında sorularınız mı var? Aşağıdaki formu doldurun, en kısa sürede size dönüş yapalım.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-form rounded p-5">
+                            <form>
+                                <h1 class="display-6 mb-4">Sorunuz mu var?</h1>
+                                <div class="row gx-4 gy-3">
+                                    <div class="col-xl-6">
+                                        <input type="text" class="form-control bg-white border-0 py-3 px-4" placeholder="Adınız">
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="email" class="form-control bg-white border-0 py-3 px-4" placeholder="E-posta">
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="text" class="form-control bg-white border-0 py-3 px-4" placeholder="Telefon">
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="text" class="form-control bg-white border-0 py-3 px-4" placeholder="Konu">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control bg-white border-0 py-3 px-4" rows="4" cols="10" placeholder="Mesajınız"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary btn-primary-outline-0 w-100 py-3 px-5" type="submit">Gönder</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="col-lg-4">
-            <div class="p-4 border rounded">
-                <h4>E-posta</h4>
-                <p>info@ornekspa.com</p>
+        <div class="container-fluid pb-5">
+            <div class="container py-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-12">
+                        <div class="row g-4">
+                            <div class="col-lg-4">
+                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                                    <div>
+                                        <h4>Adres</h4>
+                                        <p class="mb-0">Nişantaşı, Şişli / İstanbul</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
+                                    <i class="fas fa-envelope fa-2x text-primary me-4"></i>
+                                    <div>
+                                        <h4>E-posta</h4>
+                                        <p class="mb-0">info@ornekspa.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
+                                    <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                                    <div>
+                                        <h4>Telefon</h4>
+                                        <p class="mb-0">+90 555 123 45 67</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="rounded">
+                            <iframe class="rounded-top w-100" 
+                            style="height: 450px; margin-bottom: -6px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1str!2str!4v1694259649153!5m2!1str!2str" 
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="text-center p-4 rounded-bottom bg-primary">
+                            <h4 class="text-white fw-bold">Bizi Takip Edin</h4>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                            </div>   
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
+        <!-- Contact End -->
 
-        <div class="col-lg-4">
-            <div class="p-4 border rounded">
-                <h4>Telefon</h4>
-                <p>+90 532 123 45 67</p>
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="mb-4 text-white">Bülten</h4>
+                            <p class="text-white">Kampanyalar ve özel fırsatlar için e-posta bültenimize kayıt olun.</p>
+                            <div class="position-relative mx-auto rounded-pill">
+                                <input class="form-control rounded-pill border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="E-posta adresiniz">
+                                <button type="button" class="btn btn-primary btn-primary-outline-0 rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">Kayıt Ol</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Hizmetlerimiz</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Türk Hamamı (Kese & Köpük)</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Masaj</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Cilt Bakımı</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Sauna</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Buhar Odası</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Aromaterapi</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Sıcak Taş Terapisi</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Çalışma Saatleri</h4>
+                            <p class="text-muted mb-0">Pazartesi: <span class="text-white"> 09:00 – 22:00</span></p>
+                            <p class="text-muted mb-0">Cumartesi: <span class="text-white"> 09:00 – 20:00</span></p>
+                            <p class="text-muted mb-0">Pazar: <span class="text-white"> 09:00 – 17:00</span></p>
+                            <h4 class="my-4 text-white">Adres</h4>
+                            <p class="mb-0"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Nişantaşı, Şişli / İstanbul</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Bizi Takip Edin</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Facebook</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Instagram</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> X (Twitter)</a>
+                            <h4 class="my-4 text-white">İletişim</h4>
+                            <p class="mb-0"><i class="fas fa-envelope text-secondary me-2"></i> info@ornekspa.com</p>
+                            <p class="mb-0"><i class="fas fa-phone text-secondary me-2"></i> +90 555 123 45 67</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- Footer End -->
 
-    </div>
-</div>
 
-<!-- Footer -->
-<div class="container-fluid footer py-5 bg-dark text-light text-center">
-    <div class="container">
-        <h4>Spa - Türk Spa & Güzellik Salonu</h4>
-        <p class="mt-3">© 2026 Tüm hakları saklıdır.</p>
-    </div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-4 text-center text-md-start mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Ornek Spa</a>, Tüm hakları saklıdır.</span>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-center">
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
 
-</body>
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
 </html>
